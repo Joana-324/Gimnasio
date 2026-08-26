@@ -1,6 +1,7 @@
 # Propuesta de Trabajo Final Integrador (TFI)
 ## 0. Información del grupo
 Grupo N°:   127
+
 Integrantes:
 - Noguera, Joana Soledad
 - Fulladoza, Pablo Facundo
