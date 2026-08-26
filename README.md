@@ -3,9 +3,9 @@
 Grupo N°:   127
 
 Integrantes:
-- Noguera, Joana Soledad
 - Fulladoza, Pablo Facundo
 - Lauk, Karen Yamila
+- Noguera Ríos, Joana Soledad
   
 ## Sistema de Gestión Integrada para Gimnasios (GymFlow)
 
