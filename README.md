@@ -61,17 +61,14 @@ Con el fin de mitigar riesgos técnicos y optimizar el tiempo de desarrollo fren
 * **Framework:** Express.js.
 * **Justificación:** Node.js permite unificar el lenguaje de programación (JavaScript) tanto en el cliente como en el servidor, agilizando la escritura de código. Express es un framework minimalista y maduro con una amplísima comunidad y librerías pre-construidas que resuelven de forma sencilla el enrutamiento API y la conexión a las bases de datos.
 
-#### Bases de Datos (Persistencia Políglota)
-El proyecto implementará un esquema híbrido que equilibra robustez transaccional con flexibilidad documental:
-1. **Relacional (MySQL):** Motor principal para la gestión de usuarios, asignación de roles (administrador, instructor, cliente), registro de membresías y transacciones de pago. Se justifica por la necesidad de integridad transaccional estricta (cumplimiento de propiedades ACID) para asegurar la consistencia financiera de los créditos y evitar duplicación de información.
-2. **No Relacional (MongoDB):** Utilizada exclusivamente para el almacenamiento dinámico y la entrega de las rutinas de ejercicios. Las rutinas son de naturaleza jerárquica y variable (una rutina contiene días variables, que contienen ejercicios con atributos disímiles como peso, repeticiones, tiempo de descanso o notas especiales). El modelo de documentos JSON/BSON de MongoDB se adapta de forma orgánica a esta flexibilidad, permitiendo almacenar la rutina de un alumno como un solo documento sin requerir múltiples "joins" complejos.
-* **Plan de Mitigación:** En caso de presentarse bloqueos severos en la sincronización o conexión de ambos entornos, el equipo migrará el flujo de rutinas hacia MySQL utilizando tablas intermedias estructuradas (`Rutinas`, `Ejercicios` y `Rutina_Ejercicios`), garantizando así que el proyecto no se detenga.
+#### Bases de Datos (Persistencia Relacional)
+* **Motor Principal (MySQL):** El proyecto implementará un único esquema de base de datos relacional para gestionar toda la información del sistema (usuarios, asignación de roles, registro de membresías, transacciones de pago, y el diseño estructurado de las rutinas de ejercicios con sus correspondientes detalles y series).
+* **Justificación:** Se justifica por la necesidad de integridad transaccional estricta (cumplimiento de propiedades ACID) para asegurar la consistencia financiera de los créditos, evitar duplicación de información y mantener un modelo de datos unificado, normalizado y coherente mediante relaciones bien definidas entre tablas (como Usuarios, Membresías, Rutinas, Ejercicios y Rutina_Ejercicios).
 
 #### Plataformas de Despliegue en la Nube
 Para cumplir con la obligatoriedad del TFI de contar con despliegue en la nube, se planifica la siguiente arquitectura PaaS (Plataforma como Servicio), lo cual abstrae la gestión de servidores y se asocia directamente al repositorio de GitHub:
 * **Frontend:** Alojado de manera gratuita en **Vercel** o **Netlify**. Cada actualización del código en GitHub compilará y actualizará la app de forma automatizada.
 * **Backend (API):** Desplegado en **Render**, vinculando las variables de entorno de forma segura para las credenciales de bases de datos.
-* **Base de Datos NoSQL:** Alojada de forma gratuita en la nube oficial de **MongoDB Atlas**.
 * **Base de Datos SQL:** Alojada en **Aiven** o **Railway** con una instancia gestionada de MySQL.
 
 ---
