@@ -76,6 +76,6 @@ Para cumplir con la obligatoriedad del TFI de contar con despliegue en la nube, 
 ### 4. Plan de Trabajo Inicial (Línea de Tiempo)
 
 * **Etapa 1 (Hasta 30/08) - Planificación y Repositorio:** Presentación oficial de la propuesta técnica y creación del repositorio Git unificado de la materia.
-* **Etapa 2 (Hasta 27/09) - Diseño de Base de Datos y APIs:** Maquetado de la base de datos relacional (MySQL) y documental (MongoDB). Definición del árbol de rutas de Express para la API. Presentación del diseño de base de datos para aprobación del tutor (Regularidad).
+* **Etapa 2 (Hasta 27/09) - Diseño de Base de Datos y APIs:** Maquetado de la base de datos relacional (MySQL). Definición del árbol de rutas de Express para la API. Presentación del diseño de base de datos para aprobación del tutor (Regularidad).
 * **Etapa 3 (Hasta 25/10) - Desarrollo de Backend y Frontend:** Programación de la lógica de negocio (registro, control de pagos, asignación de rutinas). Desarrollo de las pantallas responsivas de administración, instructor y cliente.
 * **Etapa 4 (Hasta 14/11) - Despliegue, Pruebas y Video:** Vinculación de los servicios en la nube (Vercel, Render, bases de datos remotas). Corrección de errores cruzados. Redacción del informe final y grabación del video demostrativo explicativo (en inglés).
