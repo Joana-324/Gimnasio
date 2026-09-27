@@ -4,7 +4,6 @@
 **Asignatura:** Trabajo Final Integrador (TFI) — Tecnicatura Universitaria en Desarrollo de Software  
 **Estudiantes:** Fulladoza, Pablo Facundo - Noguera Ríos, Joana Soledad - Lauk, Karen Yamila 
 **Fecha de Entrega:** Hasta el 27 de Septiembre  
-**Condición a Alcanzar:** Regularidad de la Materia  
 
 
 ---
@@ -403,7 +402,7 @@ Para estructurar los sprints de desarrollo, el sistema se compone de **6 módulo
 
 ## 🏗️ 4. ARQUITECTURA DEL SISTEMA Y JUSTIFICACIÓN TÉCNICA
 
-### 4.1. Patrón ArquITECTÓNICO: Cliente-Servidor de 3 Capas (API REST)
+### 4.1. Patrón Arquitectónico: Cliente-Servidor de 3 Capas (API REST)
 Se implementa una arquitectura desacoplada basada en servicios Web:
 1. **Capa de Presentación (Frontend):** Interfaz Web Responsiva basada en HTML5, CSS3 (Bootstrap/Tailwind) y JavaScript (ES6+), adaptada tanto para navegadores de escritorio (Administrador/Instructor) como para dispositivos móviles (Clientes y Tablet de entrada).
 2. **Capa de Lógica de Negocio (Backend API REST):** Desarrollada sobre **Node.js** con la librería **Express**. Se estructura bajo el patrón MVC/Capas (`routes`, `controllers`, `middlewares`, `models`), gestionando la autenticación mediante tokens JWT y exponiendo endpoints JSON.
