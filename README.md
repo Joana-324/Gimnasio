@@ -9,6 +9,18 @@ Integrantes:
   
 ## Sistema de Gestión Integrada para Gimnasios (GymFlow)
 
+### 📌 Estado Actual: Segunda Entrega (Arquitectura, Módulos y Base de Datos)
+La documentación completa correspondiente a la **Segunda Entrega (Análisis, Diseño de Base de Datos, Módulos y Arquitectura)** se encuentra disponible en la carpeta del repositorio:
+* **Documentación Técnica y Módulos:** [`./docs/E2_Arquitectura-módulos.md`](./docs/E2_Arquitectura-módulos.md)
+* **Script DDL de Base de Datos (MySQL 8.0):** [`./database/schema.sql`](./database/schema.sql)
+
+> ⚠️ **Nota importante para la visualización del Diagrama Entidad-Relación (DER):** 
+> El archivo de arquitectura incluye un diagrama modelado en **Mermaid**. Para visualizarlo de manera correcta y nativa dentro del editor de código (como Visual Studio Code), es necesario tener instaladas las extensiones necesarias:
+> - *Markdown Preview Mermaid Support*
+> - *Markdown Preview Enhanced*
+> 
+> Si su entorno no lo renderiza automáticamente, puedes consultarlo de forma directa a través del link de la página de Mermaid Live Editor.
+
 ---
 ### 1. Identificación y Definición de la Problemática
 
