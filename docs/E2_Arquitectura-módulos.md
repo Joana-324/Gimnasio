@@ -408,7 +408,7 @@ Se implementa una arquitectura desacoplada basada en servicios Web:
 2. **Capa de Lógica de Negocio (Backend API REST):** Desarrollada sobre **Node.js** con la librería **Express**. Se estructura bajo el patrón MVC/Capas (`routes`, `controllers`, `middlewares`, `models`), gestionando la autenticación mediante tokens JWT y exponiendo endpoints JSON.
 3. **Capa de Datos (Persistencia):** Motor relacional **MySQL 8.0** alojado en la nube, comunicado con el backend mediante un driver de conexión SQL directo (`mysql2` / `sequelize`).
 
-### 4.2. Justificación Técnica del Stack (Basado en Lectura U1-A2)
+### 4.2. Justificación Técnica del Stack
 * **Inexistencia de Sobreingeniería:** Se seleccionó un monolito limpio con API REST en lugar de microservicios, optimizando el tiempo de construcción y asegurando la viabilidad de entrega en el ciclo de la materia.
 * **Dominio del Stack:** El equipo posee conocimientos consolidados en desarrollo Web y MySQL, lo que minimiza la curva de aprendizaje y permite enfocar el esfuerzo en la resolución del problema de negocio.
 * **Estrategia de Despliegue en la Nube:**
